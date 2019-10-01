@@ -1,37 +1,332 @@
-## Welcome to GitHub Pages
+# JavaScript
 
-You can use the [editor on GitHub](https://github.com/nakson/nakson.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Introduction
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### What is?
 
-```markdown
-Syntax highlighted code block
+- JavaScript is: a scripting language, used to interact with content in a web browser.
 
-# Header 1
-## Header 2
-### Header 3
+![1564171278074](C:\Users\thato\AppData\Roaming\Typora\typora-user-images\1564171278074.png)
 
-- Bulleted
-- List
+- Console is: a command line for the browser where you can write, manage, and monitor JavaScript on the fly. 
 
-1. Numbered
-2. List
+- jQuery is: 
 
-**Bold** and _Italic_ and `Code` text
+  - a library of JavaScript functions;
 
-[Link](url) and ![Image](src)
+  - introduces CSS-like syntax and several visual/UI;
+  - simplifies the use of JavaScript in websites.
+
+- Node.js is: a JavaScript platform built on browser run-time environment.
+
+  
+
+#### Tools:
+
+- Code Editors: Atom, Visual Studio Code, Sublime Text, ...
+- IDEs (Integrated development environments): NetBeans, Aptana Studio, Eclipse, ...
+- Browsers: Chrome, Firefox, Edge, Opera, Brave, ...
+
+- JavaScript Frameworks: React, Angular, Vue, ...
+
+  
+
+#### Writing Rules:
+
+- JavaScript is case sensitive. (分大小写)
+- Use camelCase. `eg. getElementByTagName();     var greenDuck;`
+- Whitespace matters (to humans).
+- End each statement with a semicolon (for humans). ` ;`
+- Use comments. ` // /* */`
+
+#### Others:
+
+- JavaScript Loading Methods:
+
+  - right away: <script src="script.js"></script>
+
+     	HTML parsing >> JS download >> JS execution >> ...
+    
+  - asynchronous: <script src="script.js" async></script>
+
+     	HTML parsing + JS download >> JS execution >> ...
+
+  - deferred: <script src="script.js" defer></script>
+
+     	HTML parsing + JS download (even faster)>> JS execution >> ...
+  
+    
+
+## Data
+
+``` javascript
+//These are the same:
+var a = 5;
+var b = 4;
+var sum = a + b;
+
+var a, b, sum;
+a = 5;
+b = 4;
+sum = a + b;
+
+var a = 5, b = 4, sum = a + b;
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+` a = 6` is ok, but to avoid global scope, always declare your variables.
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/nakson/nakson.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+#### Date Types:
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- Numeric
+
+  ``` javascript
+  var num = 1;
+  ```
+
+- String
+
+  ``` javascript
+  var string = "Typically words and sentences.";
+  var escQuote = "Quotes can also be \"escaped\".";
+  ```
+
+- Boolean
+
+  ``` javascript
+  var isFemale = true;
+  var isBird = false;
+  ```
+
+- null
+
+  ``` javascript
+  //Store the intentional absence of a value:
+  var emptyInside = null;
+  ```
+
+- undefined
+
+- Symbol
+
+```javascript
+//Find the Data Type of a Variable:
+var num = 1;
+console.log(typeof num);
+```
+
+
+
+#### Operators:
+
+https://www.w3schools.com/jsref/jsref_operators.asp
+
+
+
+#### Array:
+
+https://www.w3schools.com/jsref/jsref_obj_array.asp
+
+```javascript
+var pens;
+pens = ["red", "blue", "green", "orange"];
+
+console.log("Before: ", pens);
+
+// PROPERTIES:
+// Get a property of an object by name:
+console.log("Array length: ", pens.length);
+
+// METHODS:
+// Remove the first value of the array:
+pens.shift(); //->["blue", "green", "orange"]
+
+// Add to the front of the array:
+pens.unshift("purple", "black"); //->["purple", "black", "blue", "green", "orange"]
+
+// Remove the last value of the array:
+pens.pop();  //->["purple", "black", "blue", "green"]
+
+// Add to the end of the array:
+pens.push("pink"); //->["purple", "black", "blue", "green","pink"]
+
+// Find the specified position (pos) and remove n number of items from the array. Arguments: pens.splice(pos,n):
+pens.splice(1, 2); // Starts at the seccond item and removes two items.
+
+console.log("After: ", pens); //->["purple", "green","pink"]
+
+// Create a copy of an array. Typically assigned to a new variable:
+var newPens = pens.slice();
+console.log("New pens: ", newPens);
+
+// Return the first element that matches the search parameter after the specified index position. Defaults to index position 0. Arguments: pens.indexOf(search, index):
+ ar result = pens.indexOf("orange", 1);
+ console.log("The search result index is: ", result);
+
+// Return the items in an array as a comma separated string. The separator argument can be used to change the comma to something else. Arguments: pens.join(separator):
+ var arrayString = pens.join("_");
+ console.log("String from array: ", arrayString);
+```
+
+
+
+## Functions and Objects
+
+#### What is?
+
+- const : constant, can't be changed once defined.
+- let: block scope variable, smaller scope than var.
+- course.title = course["title"]. 
+- closures: function inside function.
+
+#### Basic function:
+
+```javascript
+function multiply(a,b){
+    var result = a*b;
+    return result;
+}
+var test = multiply(3,4); 
+console.log(test);	//12
+```
+
+#### Anonymous function:
+
+``` javascript
+var theBiggest = function(a,b) {
+    var result;
+    a>b ? result = ["a", a] : result = ["b", b];
+    return result;
+}
+console.log(theBiggest(7/9,13/25)); //["a", 0.7777777777777778]
+
+//Immediately invoked
+var divided =  (function(a,b){
+    var result = a/b;
+    return result;
+})(4,2)
+console.log(divided); //2
+```
+
+
+
+#### Objects
+
+``` javascript
+var course = nre Object();
+
+//course.title = "Introduction of JavaScript";
+//course.instructor = "Nakson";
+//course.level = 1;
+
+var course = {
+    title: "Introduction of JavaScript",
+	level: 1,
+    public: true,
+    views: 0,
+    updateViews: functino(){
+   		 return ++course.views
+	}
+}
+console.log(course.views); //0 
+course.updateViews();
+console.log(course.views); //1
+//每次新建都要：
+var course02 = new course();
+```
+
+Object constructors:
+
+``` javascript
+function Course(title, level, public, views){
+    this.title = title;
+    this.level = level;
+    this.pubilc = public;
+    this.views = views;
+    this.updateViews = function(){return ++this.views;};
+}
+var courses = [
+    new Course("Introduction of JavaScript", 1, true, 0);
+    new Course("Introduction of speakers", 1, true, 100);
+];
+console.log(courses[1].updateViews()); //101
+```
+
+#### Closures:
+
+A function inside of a function that relies on variables in the outside function to work. 
+
+```javascript
+function giveMeEms(pixels){
+    var baseValue = 16;
+    
+    function doTheMath(){
+        return pixels/baseValue;
+    }
+    
+    return doTheMath;
+}
+
+var smallSize = giveMeEms(12);
+var largeSize = giveMeEms(24);
+
+console.log("Small size: ", smallSize()); //0.75
+console.log("Large size: ", largeSize()); //2
+```
+
+more on closures:
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+
+
+
+## DOM
+
+#### What is?
+
+- BOM: Browser Object Model
+- DOM: Document Object Model
+
+#### BOM:
+
+eg.   window.innerHeight			window.open()
+
+​		document 
+
+#### DOM
+
+![1564703259899](1564703259899.png)
+
+- DOM properties: 
+
+  eg.   document.body;
+
+  ​		document.title;
+
+  ​		document.URL;
+
+- DOM methods: 
+
+  eg.   document.getElementById("...");
+
+  ​		document.getElementByClassName("...");
+
+  ​		document.getElementByTagName("...");
+
+  ​		document.querySelector(".main-nav a");
+
+  ​		document.querySelectorAll(".post-content p");
+
+more: https://developer.mozilla.org/en-US/docs/Web/API/document
+
+​			https://developer.mozilla.org/en-US/docs/Web/API/Element#PropertiesA
+
+#### Add Inline CSS to an Elem
+
+
+
+
+
