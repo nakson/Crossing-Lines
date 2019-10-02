@@ -8,8 +8,6 @@
 
 - JavaScript is: a scripting language, used to interact with content in a web browser.
 
-![](https://github.com/nakson/Crossing-Lines/blob/master/pic/1564703259899.png)
-
 - Console is: a command line for the browser where you can write, manage, and monitor JavaScript on the fly. 
 
 - jQuery is: 
@@ -21,7 +19,7 @@
 
 - Node.js is: a JavaScript platform built on browser run-time environment.
 
-  
+  ![](https://github.com/nakson/Crossing-Lines/blob/master/pic/1564703259899.png)
 
 #### Tools:
 
@@ -297,6 +295,8 @@ eg.   window.innerHeight			window.open()
 ​		document 
 
 #### DOM
+
+![1564703259899](D:/K/笔记/1564703259899-1569965728071.png)
 
 - DOM properties: 
 
