@@ -298,8 +298,6 @@ eg.   window.innerHeight			window.open()
 
 #### DOM
 
-![1564703259899](pic\1564703259899.png)
-
 - DOM properties: 
 
   eg.   document.body;
