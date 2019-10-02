@@ -8,7 +8,7 @@
 
 - JavaScript is: a scripting language, used to interact with content in a web browser.
 
-![1564171278074](https://github.com/nakson/Crossing-Lines/blob/master/pic/1564703259899.png)
+![](https://github.com/nakson/Crossing-Lines/blob/master/pic/1564703259899.png)
 
 - Console is: a command line for the browser where you can write, manage, and monitor JavaScript on the fly. 
 
