@@ -296,7 +296,6 @@ eg.   window.innerHeight			window.open()
 
 #### DOM
 
-![1564703259899](D:/K/笔记/1564703259899-1569965728071.png)
 
 - DOM properties: 
 
