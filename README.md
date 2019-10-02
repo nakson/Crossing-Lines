@@ -19,7 +19,7 @@
 
 - Node.js is: a JavaScript platform built on browser run-time environment.
 
-  ![](https://github.com/nakson/Crossing-Lines/blob/master/pic/1564703259899.png)
+  ![image](https://github.com/nakson/Crossing-Lines/blob/master/pic/1564703259899.png)
 
 #### Tools:
 
@@ -296,7 +296,7 @@ eg.   window.innerHeight			window.open()
 
 #### DOM
 
-![1564703259899](D:/K/笔记/1564703259899-1569965728071.png)
+  ![image](https://github.com/nakson/Crossing-Lines/blob/master/pic/1564703259899.png)
 
 - DOM properties: 
 
