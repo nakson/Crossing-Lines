@@ -19,7 +19,7 @@
 
 - Node.js is: a JavaScript platform built on browser run-time environment.
 
-  ![image](./pic/1564703259899.png)
+![image](./pic/1564703259899.png)
 
 #### Tools:
 
