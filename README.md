@@ -28,7 +28,8 @@
 ## Bi-weekly schedule
 
 
-
+| **Sep. 23   -   Oct.   7**                                   |
+| :----------------------------------------------------------- |
 | **Sep. 23   -   Oct.   7**                                   |
 | :----------------------------------------------------------- |
 | -  Finish the edge detection layer                                                                                            -  Designing an algorithm for drawing lines                                                                               -  Finish the second layer which draws parallel lines in one   direction                            -  Making more specific implementation   plans                                                                  -  Meet with   supervisor to discuss the progress |
