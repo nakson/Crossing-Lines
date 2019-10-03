@@ -28,7 +28,7 @@
 | **BI-WEELY SECHEDULE**                                       |
 | :----------------------------------------------------------- |
 | **Sep. 23   -   Oct.   7**                                   |
-| -  Finish the edge detection layer                                                                                            -  Designing an algorithm for drawing lines                                                                               -  Finish the second layer which draws parallel lines in one   direction                            -  Making more specific implementation   plans                                                                  -  Meet with   supervisor to discuss the progress |
+|  - Finish the edge detection layer  <br>                                                                                                  -  Designing an algorithm for drawing lines      <br>                                                                                    -  Finish the second layer which draws parallel lines in one   direction     <br>                                                        -  Making more specific implementation   plans         <br>                                                                              -  Meet with   supervisor to discuss the progress |
 | **Oct.** **7**     **-   Oct. 21**                           |
 | -  Developing software                                                                                                              -  Evaluating   implementations, testing                                                                                 -  Improving algorithm                                                                                                              -  Drawing additional   layers of lines in different directions                                              -  Meet with supervisor to discuss the progress |
 | **Oct. 21   -   Nov. 4**                                     |
@@ -37,6 +37,7 @@
 | -  Working on additional features (curve crosshatching, UI, other feasible features)                                                                                                                               -  Meet with supervisor to discuss the progress |
 | **Nov. 18   -     Dec. 2**                                   |
 | -  Working on project report                                                                                                    -  First draft of final report   (due Nov 29)                                                                              -  Submit final report (due Dec 13) |
+
 
 
 
