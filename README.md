@@ -44,4 +44,4 @@
 
 ## Blog #1
 
-![hondaTypeR](/pic/hondaTypeR.jpg)
+![hondaTypeR](../pic/hondaTypeR.jpg)
