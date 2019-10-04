@@ -19,7 +19,7 @@
     - Lines should cover dark areas and avoid light areas
     - Allow users to choose a local image file and save the output image
   - Possible additional features:
-    - A simple user interfaces.
+    - A better user interfaces.
     
     - Use curve instead of only straight lines to optimize the output image.
     
