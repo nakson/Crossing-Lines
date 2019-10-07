@@ -113,4 +113,4 @@ for each pixel p[i] of the image:
 - How to control the density of lines according to dark and bright areas?
   - need to load both the edge-layer and original input image
 
-<img src="/pic/scdvgj.jpg" alt="scdvgj" style="zoom:50%;" />
+<img src="https://github.com/nakson/Crossing-Lines/blob/master/pic/scdvgj.jpg" alt="scdvgj" style="zoom:50%;" />
