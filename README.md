@@ -40,7 +40,75 @@
 
 
 
+## Blog #1 Crosshatching
 
-## Blog #1
+#### How to draw crosshatching by hand?
+
+<img src="/pic/Captdsdsd.PNG" alt="Captdsdsd" style="zoom: 50%;" />
+
+- Drawing five layers of closely spaced parallel lines in different angles
+  - Layer 0: outline the edges. The following layers are inside of this layer.
+  - Layer 1: closely spaced parallel lines in one detection
+  - Layer 2: closely spaced parallel lines at 90 degree angle to layer_1
+  - Layer 3: closely spaced parallel lines at 45 degree angle to layer_1
+  - Layer 4: closely spaced parallel lines at 90 degree angle to layer_3
+
+![meitu_0](/pic/meitu_0.jpg)
+
+
+
+#### My plan of drawing crosshatching using Processing
+
+- Also five layers of closely spaced parallel lines in different angles
+  - The base layer detects the edges of the input image
+  - For other four layers of lines:
+    - lines should be inside of the edges
+    - the density and length of lines should depend on the brightness of the input image
+
+
+
+
+
+## Blog #2 Edge Detector
 
 ![hondaTypeR](/pic/hondaTypeR.jpg)
+
+#### Algorithm
+
+- Comparing the brightness of each pixel with it's eight neighbors
+- If the difference of  brightness is too big, then this pixel is a part of edges
+
+``` java
+for each pixel p[i] of the image:
+	diff = brightness(p[i]) - brightness(p[neighbor]);
+	if(diff > 20):
+		update p[i] to a black pixel
+	else
+		update p[i] to a white pixel
+```
+
+###### When the difference of brightness is > 15:
+
+![15](/pic/15.jpg)
+
+###### When the difference of brightness is > 40:
+
+![40](/pic/40.jpg)
+
+![meitu_1](/pic/meitu_1.jpg)
+
+
+
+
+
+## Blog #3 Try one layer of lines
+
+#### Things that need to figure out:
+
+- How to make sure the lines do not appear in white space outside of edges?
+- How to control the length of the lines?
+  - maybe optimize the edge-layer
+- How to control the density of lines according to dark and bright areas?
+  - need to load both the edge-layer and original input image
+
+<img src="/pic/scdvgj.jpg" alt="scdvgj" style="zoom:50%;" />
