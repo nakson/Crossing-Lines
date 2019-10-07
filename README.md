@@ -44,9 +44,7 @@
 
 #### How to draw crosshatching by hand?
 
-<p align="center">
-  <img style="zoom: 50%;" src="https://github.com/nakson/Crossing-Lines/blob/master/pic/scdvgj.jpg">
-</p>
+![scdvgj](/pic/Captdsdsd.PNG)
 
 - Drawing five layers of closely spaced parallel lines in different angles
   - Layer 0: outline the edges. The following layers are inside of this layer.
@@ -82,7 +80,7 @@
 
 ``` java
 for each pixel p[i] of the image:
-	diff = brightness(p[i]) - brightness(p[neighbor]);
+	diff = abs(brightness(p[i]) - brightness(p[neighbor]));
 	if(diff > 20):
 		update p[i] to a black pixel
 	else
@@ -113,4 +111,4 @@ for each pixel p[i] of the image:
 - How to control the density of lines according to dark and bright areas?
   - need to load both the edge-layer and original input image
 
-<img src="/pic/scdvgj.jpg" alt="scdvgj" style="zoom:50%;" />
+![scdvgj](/pic/scdvgj.jpg)
