@@ -44,7 +44,7 @@
 
 #### How to draw crosshatching by hand?
 
-<img src="/pic/Captdsdsd.PNG" width="200">
+![Captdsdsd](/pic/Captdsdsd.PNG)
 
 - Drawing five layers of closely spaced parallel lines in different angles
   - Layer 0: outline the edges. The following layers are inside of this layer.
