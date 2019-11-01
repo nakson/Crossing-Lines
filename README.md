@@ -113,7 +113,15 @@ for each pixel p[i] of the image:
 
 ![scdvgj](/pic/scdvgj.jpg)
 
-## Blog #4 Two layers of lines
+## Blog #4  Canny edge 
+
+![wdad23](/pic/c1.png)
+
+![wdad23](/pic/ccat.png)
+
+
+
+## Blog #5 Two layers of lines
 
 ![wdad23](/pic/wdad23.jpg)
 
