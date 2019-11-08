@@ -130,3 +130,38 @@ for each pixel p[i] of the image:
 ![wdad23](/pic/asadefreg.jpg)
 
 ![wdad23](/pic/5tjguh.jpg)
+
+
+
+
+
+## Blog #6 Added two diagonal layers
+
+Now there are 5 layers of lines: edge + horizontal + vertical + two diagonal
+
+![wdad23](/pic/b111.png)
+
+
+
+![wdad23](/pic/c111.jpg)
+
+
+
+![wdad23](/pic/h111.png)
+
+
+
+![wdad23](/pic/m111.jpg)
+
+
+
+![wdad23](/pic/s111.jpg)
+
+
+
+#### Things that still need to be done:
+
+- In the grayscale image, some vertical parts (small ranges of brightness) are not smooth transition.
+- In the cat image, there are a few redundant / lines.
+- The skin (face, hand, etc.) of character is not clear, because most faces are very bright. 
+
