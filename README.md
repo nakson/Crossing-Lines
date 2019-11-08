@@ -164,4 +164,5 @@ Now there are 5 layers of lines: edge + horizontal + vertical + two diagonal
 - In the grayscale image, some vertical parts (small ranges of brightness) are not smooth transition.
 - In the cat image, there are a few redundant / lines.
 - The skin (face, hand, etc.) of character is not clear, because most faces are very bright. 
+- Generate a simple UI that allows users to chooes a local image as input and output the stylized image.
 
