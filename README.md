@@ -253,7 +253,7 @@ Now there are 5 layers of lines: edge + horizontal + vertical + two diagonal
 
 #### Code Issues
 
-- Let "—" lines and "|" lines stop when they hit an edge
+- Let horizonal lines and vertical lines stop when they hit an edge
 - Remove redundant lines that shouldn't appear (ex. / lines in cat image)
 - Make the grayscale image smooth transition
 - Let the density of lines more flexible (add some randomness)
