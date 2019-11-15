@@ -164,5 +164,100 @@ Now there are 5 layers of lines: edge + horizontal + vertical + two diagonal
 - In the grayscale image, some vertical parts (small ranges of brightness) are not smooth transition.
 - In the cat image, there are a few redundant / lines.
 - The skin (face, hand, etc.) of character is not clear, because most faces are very bright. 
-- Generate a simple UI that allows users to chooes a local image as input and output the stylized image.
+
+
+
+
+
+## Blog #7 Next stage plan
+
+#### More testing images:
+
+![wdad23](/pic/brid.jpg)
+
+![wdad23](/pic/hj.jpg)
+
+![wdad23](/pic/phone.jpg)
+
+![wdad23](/pic/gh.jpg)
+
+
+
+#### Outline of the Report
+
+**Format:** 
+
+> Font: Times New Roman, 12
+>
+> Line Spacing: double
+
+- **Cover page** 	
+  - Name of the Project
+  - Student name, Supervisor name, Date
+
+- **Abstract** 	(1/2 page)
+  - a small summary of what this report is about.
+
+- **Introduction** 	(2 pages + 1/2 images)
+  - intro what is cross-hatching
+  - aims/motivation of the project
+  - problem statement
+    - the most important (/interesting) parts of the project
+    - the design choices (drawing separated layers of lines)
+    - the most difficult part
+    - why was it difficult
+  - overview
+    - what was achieved
+    - any discovery during the project
+    - what did I learn
+- **Background** 	(2 pages + 1 images)
+  - how to draw cross-hatching by hand (+images)
+  - what problem am I solving technically, and why solving it
+  - existing work
+    - tone matching (+images)
+    - canny edge detection (+images)
+    - other background research (+images)
+    - how does this relate to other work in this area
+  - software
+    - why use processing
+- **Algorithm** 	(5 pages + 2 images)
+  - problem analysis
+    - what are main features to implement
+    - for each features, problems need to solve
+  - solution design (+images, output illustration)
+    - short answer of each problems above
+  - how the method works (+images, draft result after implemented parts of methods)
+    - methods in details, separate by layers and features
+    - code details (pseudocode of key parts)
+    - explain why chose this way
+    - explain how they work together
+  - justify steps
+    - how the program was verified 
+    - put images of each layer of results  (+images)
+- **Results** 	(4 pages + 3 images)
+  - various test cases (+images)
+    - different kinds of input images
+  - result and discussion
+  - evaluation
+    - how the results look with different kind of inputs
+  - successes, limitations 
+    - what parts did implemented, which parts is not good enough and why
+- **Conclusion** 	(1 page)
+  - main result
+  - future work
+  - advice to future students
+
+- **References**
+
+
+
+#### Code Issues
+
+- Let — lines and | lines stop when they hit an edge
+- Remove redundant lines that shouldn't appear (ex. / lines in cat image)
+- Make the grayscale image smooth transition
+- Let the density of lines more flexible (add some randomness)
+- Make the coverage of each layers dynamically (ex. depends on the direction of nearby edges)
+- For the part that is in bright area but still need more details (ex. face), force down the brightness to draw more lines (usually this kind of areas are inside of a closed edges)
+- Image vectorizer 
 
