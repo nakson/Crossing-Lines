@@ -192,72 +192,190 @@ Now there are 5 layers of lines: edge + horizontal + vertical + two diagonal
 > Line Spacing: double
 
 - **Cover page** 	
-  - Name of the Project
-  - Student name, Supervisor name, Date
+  - Name of the Project: Crossing Lines
+  - Student name: Yang Na, Supervisor name: David Mould, Submit date: Dec 13, 2019
 
-- **Abstract** 	(1/2 page)
-  - a small summary of what this report is about.
-
-- **Introduction** 	(2 pages + 1/2 images)
-  - intro what is cross-hatching
+- **Abstract 	(1/2 page)**
+  
+  -  A small summary of what this report is about
+    - image processing, cross hatching, what the program does (input, output)
+  
+- **Introduction 	(2 pages + 1/2 images)**
+  
+  - intro to cross-hatching (+images, hand drawing)
+    - definition of hatching and cross-hatching  
+    - the history of cross-hatching technique
+    - explanations, what it should look like, why is it encountered by artist
   - aims/motivation of the project
+    - the importance of cross-hatching
+    - looks beautiful. It is a basic and classical way to stylish an image
+    - it is a very logical way of drawing, figuring out the math behind this kind of sketch is interesting
   - problem statement
     - the most important (/interesting) parts of the project
-    - the design choices (drawing separated layers of lines)
+      - simulating and achieve the cross-hatching style of hand drawing using code 
+    - the design choices 
+      - drawing in layers
+      - this is easier to analysis and design, and will be easy to test each layer of crossing
     - the most difficult part
+      - how to cover different areas with different brightness
+        - how to decide which layer of lines to cover which area
+        - the key points is density of lines and how to find the appropriate end points of each line
     - why was it difficult
+      - sometimes it is easy for human eyes to figure, however it is not easy for a computer
   - overview
-    - what was achieved
+    - what was achieved in this project
+      - 5 layers of drawing (edge layer, horizontal and vertical layers, and two diagonal layers)
+      - lines in darker area are more intensive than lines in brighter area 
+      - the darker area covers more layers of lines
     - any discovery during the project
+      - image vectorizer 
+      - some bright area like human face need special treatment, otherwise it will be vague
     - what did I learn
-- **Background** 	(2 pages + 1 images)
-  - how to draw cross-hatching by hand (+images)
+  
+- **Background 	(2 pages + 1 images)**
+  
+  - how to draw cross-hatching by hand (+images of each layers)
+  
+    - hatching: lines, shadows and perspective
+    - cross-hatching: layers of hatching, usually each two layers are perpendicular
+  
+  - software
+  
+    - processing: 
+      - designed to code within the context of the visual arts
+      - many useful build in libraries
+  
   - what problem am I solving technically, and why solving it
+  
+    - digital images are stored as an array of pixels in computer
+    - each pixel has it's index, so we can control and make changes to the image by modify pixels
+    - drawing lines in processing is actually finding the appropriate two end points of each line
+    - each pixel from an image has it's brightness, and it is a number from 0 to 255
+  
   - existing work
     - tone matching (+images)
     - canny edge detection (+images)
     - other background research (+images)
     - how does this relate to other work in this area
-  - software
-    - why use processing
-- **Algorithm** 	(5 pages + 2 images)
+    
+    
+  
+- **Algorithm 	(5 pages + 2 images)**
+
   - problem analysis
-    - what are main features to implement
+    - the main features to implement:
+      1. A base layer that detects edges  from input image 
+      2. For every other layer, lines are parallel to each other  
+      3. Lines should cover dark areas and avoid  light areas  
+      4. Lines on different layers should find a proper angle  to cross other layer’s lines 
+      5. Allow users to choose a local image file and save the output image.  
     - for each features, problems need to solve
+      1. the edges layer should has a clear view of the main objects of the image
+      2. lines are parallel in same layer
+      3. the density of parallel lines depend on the brightness where the lines are covering
+      4. the horizontal lines and vertical lines are perpendicular to each other. The two oblique lines layers may not be perpendicular, they need to be in the direction of diagonals of rectangles that created by first two layers
+      5. pop-up window to choose input image from local directory
   - solution design (+images, output illustration)
-    - short answer of each problems above
+    
+    1. canny edge detection is used for the edge layer, since it can smooth the image with a Gaussian filter to reduce noise and unwanted details and textures
+    
+       - this step can be achieved by using existing work of others
+    
+    2. the length of each line should also depends on the brightness, so the lines are longer in darker areas, and shorter in brighter areas
+    
+       - this step can be achieved by setup a counter that count how many pixels should be included in current line
+       - should avoid overlapping lines, although it is the same visually
+    
+    3. the gaps between parallel lines is more smaller, when the area is more darker
+    
+       - this step can be achieved through dividing the brightness into ranges, then let the line gaps in different ranges different value
+       - in order to make the output looks more natural, need to add a little randomness to the gap
+    
+    4. the oblique lines need to be parallel to the diagonals, but it is not necessary on diagonals
+    
+    5. make the program as a simple executable application
+    
+       - small button, pop-up window, run on Windows or Linux
+    
+       - this step is easy to implement with in processing
   - how the method works (+images, draft result after implemented parts of methods)
-    - methods in details, separate by layers and features
-    - code details (pseudocode of key parts)
-    - explain why chose this way
+    - methods in details
+      1. canny edge detection (pseudocode, explain, +image)
+      2. set a fixed maximum value, when the counter sum up the brightness of pixels and reach the maximum value, that is the length of the line (pseudocode, explain, also explain how to avoid overlapping) 
+      3. density of lines (pseudocode, explain, +image)
+      4. the layers of oblique lines (similarities and differences with horizontal and vertical lines)
     - explain how they work together
+      - put all layers together (+image)
   - justify steps
     - how the program was verified 
+      - check if it meets all the features that required
     - put images of each layer of results  (+images)
-- **Results** 	(4 pages + 3 images)
-  - various test cases (+images)
-    - different kinds of input images
-  - result and discussion
-  - evaluation
-    - how the results look with different kind of inputs
-  - successes, limitations 
-    - what parts did implemented, which parts is not good enough and why
-- **Conclusion** 	(1 page)
-  - main result
-  - future work
-  - advice to future students
 
+- **Results 	(2 pages + 5 images)**
+  
+  - various test cases (+images)
+    
+    - grayscale images
+    - clear background
+    - single object like car
+    - animals hair
+    - streets and buildings
+    - drake night
+    - natural images
+    - low resolution image
+    - high resolution image
+    - comic book image
+    - portrait 
+    - image with text
+  - result and discussion
+    - how the results look with all kinds of inputs
+    - 
+  
+  - evaluation
+    
+    - the overall clarity
+    - 
+    
+  - successes, limitations 
+    
+    - successes: all layers of crossing lines as expected
+    
+      ​                    it works fine with hairs because short hairs look like lines
+    
+      ​				    it works well with indoor images with natural lights that contain a lot of objects
+    
+    - limitations: not very clear with low pixels image and human skins
+    
+      ​					 running time is slow when the input image is big
+  
+- **Conclusion 	(1 page) **
+  
+  - main result
+    - A base layer that detects edges  from input image 
+    2. For every other layer, lines are parallel to each other  
+    3. Lines should cover dark areas and avoid  light areas  
+    4. Lines on different layers should find a proper angle  to cross other layer’s lines 
+    5. Allow users to choose a local image file and save the output image.  
+  - future work
+    - optimize algorithm, better run time
+    - instead of using straight lines, cross-hatching with curves
+- advice to future students
+  
 - **References**
+
+
 
 
 
 #### Code Issues
 
-- Let horizonal lines and vertical lines stop when they hit an edge
+- Let — lines and | lines stop when they hit an edge
 - Remove redundant lines that shouldn't appear (ex. / lines in cat image)
 - Make the grayscale image smooth transition
 - Let the density of lines more flexible (add some randomness)
 - Make the coverage of each layers dynamically (ex. depends on the direction of nearby edges)
 - For the part that is in bright area but still need more details (ex. face), force down the brightness to draw more lines (usually this kind of areas are inside of a closed edges)
 - Image vectorizer 
+
+
 
