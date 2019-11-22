@@ -348,7 +348,7 @@ Now there are 5 layers of lines: edge + horizontal + vertical + two diagonal
     
       ​					 running time is slow when the input image is big
   
-- **Conclusion 	(1 page) **
+- **Conclusion 	(1 page)**
   
   - main result
     - A base layer that detects edges  from input image 
@@ -369,7 +369,7 @@ Now there are 5 layers of lines: edge + horizontal + vertical + two diagonal
 
 #### Code Issues
 
-- Let — lines and | lines stop when they hit an edge
+- Let "—" lines and "|" lines stop when they hit an edge
 - Remove redundant lines that shouldn't appear (ex. / lines in cat image)
 - Make the grayscale image smooth transition
 - Let the density of lines more flexible (add some randomness)
