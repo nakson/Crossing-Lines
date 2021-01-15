@@ -1,3 +1,5 @@
+# Blogs
+
 ## Description
 
 - **MAIN OBJECTIVES**
@@ -367,7 +369,7 @@ Now there are 5 layers of lines: edge + horizontal + vertical + two diagonal
 
 
 
-#### Code Issues
+#### Code Issues (solved)
 
 - Let "—" lines and "|" lines stop when they hit an edge
 - Remove redundant lines that shouldn't appear (ex. / lines in cat image)
