@@ -46,7 +46,7 @@
 
 #### How to draw crosshatching by hand?
 
-![scdvgj](../pic/Captdsdsd.PNG)
+![scdvgj](/pic/Captdsdsd.PNG)
 
 - Drawing five layers of closely spaced parallel lines in different angles
   - Layer 0: outline the edges. The following layers are inside of this layer.
@@ -55,7 +55,7 @@
   - Layer 3: closely spaced parallel lines at 45 degree angle to layer_1
   - Layer 4: closely spaced parallel lines at 90 degree angle to layer_3
 
-![meitu_0](../pic/meitu_0.jpg)
+![meitu_0](/pic/meitu_0.jpg)
 
 
 
@@ -73,7 +73,7 @@
 
 ## Blog #2 Edge Detector
 
-![hondaTypeR](../pic/hondaTypeR.jpg)
+![hondaTypeR](/pic/hondaTypeR.jpg)
 
 #### Algorithm
 
@@ -91,13 +91,13 @@ for each pixel p[i] of the image:
 
 ###### When the difference of brightness is > 15:
 
-![15](../pic/15.jpg)
+![15](/pic/15.jpg)
 
 ###### When the difference of brightness is > 40:
 
-![40](../pic/40.jpg)
+![40](/pic/40.jpg)
 
-![meitu_1](../pic/meitu_1.jpg)
+![meitu_1](/pic/meitu_1.jpg)
 
 
 
@@ -113,25 +113,25 @@ for each pixel p[i] of the image:
 - How to control the density of lines according to dark and bright areas?
   - need to load both the edge-layer and original input image
 
-![scdvgj](../pic/scdvgj.jpg)
+![scdvgj](/pic/scdvgj.jpg)
 
 ## Blog #4  Canny edge 
 
-![wdad23](../pic/c1.png)
+![wdad23](/pic/c1.png)
 
-![wdad23](../pic/ccat.png)
+![wdad23](/pic/ccat.png)
 
 
 
 ## Blog #5 Two layers of lines
 
-![wdad23](../pic/wdad23.jpg)
+![wdad23](/pic/wdad23.jpg)
 
-![ikhugu7](../pic/ikhugu7.jpg)
+![ikhugu7](/pic/ikhugu7.jpg)
 
-![wdad23](../pic/asadefreg.jpg)
+![wdad23](/pic/asadefreg.jpg)
 
-![wdad23](../pic/5tjguh.jpg)
+![wdad23](/pic/5tjguh.jpg)
 
 
 
@@ -141,23 +141,23 @@ for each pixel p[i] of the image:
 
 Now there are 5 layers of lines: edge + horizontal + vertical + two diagonal
 
-![wdad23](../pic/b111.png)
+![wdad23](/pic/b111.png)
 
 
 
-![wdad23](../pic/c111.jpg)
+![wdad23](/pic/c111.jpg)
 
 
 
-![wdad23](../pic/h111.png)
+![wdad23](/pic/h111.png)
 
 
 
-![wdad23](../pic/m111.jpg)
+![wdad23](/pic/m111.jpg)
 
 
 
-![wdad23](../pic/s111.jpg)
+![wdad23](/pic/s111.jpg)
 
 
 
@@ -175,13 +175,13 @@ Now there are 5 layers of lines: edge + horizontal + vertical + two diagonal
 
 #### More testing images:
 
-![wdad23](../pic/brid.jpg)
+![wdad23](/pic/brid.jpg)
 
-![wdad23](../pic/hj.jpg)
+![wdad23](/pic/hj.jpg)
 
-![wdad23](../pic/phone.jpg)
+![wdad23](/pic/phone.jpg)
 
-![wdad23](../pic/gh.jpg)
+![wdad23](/pic/gh.jpg)
 
 
 
