@@ -15,11 +15,11 @@ good start for future improvements.
 
 ## Examples
 
-**Original image**                                                       **Output image**
+**Original image**                                                                 **Output image**
 
-![co](\pic\co.png)
+![co](.\pic\co.png)
 
-![peach](\pic\peach.png)
+![peach](.\pic\peach.png)
 
 ![beach](\pic\beach.png)
 
