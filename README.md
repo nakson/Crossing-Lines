@@ -37,7 +37,7 @@ The solution design can be split into five steps, which are separated by the fiv
 
 **#1 the edge-layer** ( [CannyEdgeDetector by Müller, 2018](https://github.com/Milchreis/processing-imageprocessing))
 
-![layer01](\pic\layer01.jpg)
+![layer01](.\pic\layer01.jpg)
 
 **#2 horizontal lines.** Lines in this layer must be parallel to each other, and only in one direction. Also, the lines should cover dark areas and avoid bright areas. And the density of lines depends on the brightness of the current area. 
 
