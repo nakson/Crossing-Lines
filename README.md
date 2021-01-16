@@ -19,15 +19,15 @@ good start for future improvements.
 
 ![co](/pic/co.png)
 
-![peach](.\pic\peach.png)
+![peach](/pic/peach.png)
 
-![beach](\pic\beach.png)
+![beach](/pic/beach.png)
 
-![citybeach](\pic\citybeach.png)
+![citybeach](/pic/citybeach.png)
 
-![city](\pic\city.png)
+![city](/pic/city.png)
 
-![bird](\pic\bird.png)
+![bird](/pic/bird.png)
 
 
 
@@ -37,21 +37,21 @@ The solution design can be split into five steps, which are separated by the fiv
 
 **#1 the edge-layer** ( [CannyEdgeDetector by Müller, 2018](https://github.com/Milchreis/processing-imageprocessing))
 
-![layer01](.\pic\layer01.jpg)
+![layer01](./pic/layer01.jpg)
 
 **#2 horizontal lines.** Lines in this layer must be parallel to each other, and only in one direction. Also, the lines should cover dark areas and avoid bright areas. And the density of lines depends on the brightness of the current area. 
 
-![layer02](\pic\layer02.png)
+![layer02](/pic/layer02.png)
 
 **#3 vertical lines.** Lines in this layer are the same as horizontal lines, except the direction of this layer is perpendicular to the horizontal layer. 
 
-![layer03](\pic\layer03.png)
+![layer03](/pic/layer03.png)
 
 **#4 oblique lines.** bottom-left to top-right.
 
-![layer04](\pic\layer04.png)
+![layer04](/pic/layer04.png)
 
 **#5 oblique lines.** top-left to bottom-right.
 
-![layer05](\pic\layer05.png)
+![layer05](/pic/layer05.png)
 
