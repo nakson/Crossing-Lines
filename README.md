@@ -17,7 +17,7 @@ good start for future improvements.
 
 **Original image**                                                                 **Output image**
 
-![co](.\pic\co.png)
+![co](/pic/co.png)
 
 ![peach](.\pic\peach.png)
 
