@@ -17,7 +17,7 @@ good start for future improvements.
 
 **Original image**                                                                 **Output image**
 
-![co](/pic/co.png)
+![hall](/pic/hall.png)
 
 ![peach](/pic/peach.png)
 
