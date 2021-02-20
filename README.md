@@ -1,4 +1,4 @@
-# Crossing Lines
+﻿# Crossing Lines
 
 
 ## Intro
@@ -17,17 +17,17 @@ good start for future improvements.
 
 **Original image**                                                                 **Output image**
 
-![hall](/pic/hall.png)
+![hall](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192445975-735800093.png)
 
-![peach](/pic/peach.png)
+![peach](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192441798-1403833573.png)
 
-![beach](/pic/beach.png)
+![beach](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192438229-596549540.png)
 
-![citybeach](/pic/citybeach.png)
+![citybeach](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192428567-1213759285.png)
 
-![city](/pic/city.png)
+![city](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192423029-1586098834.png)
 
-![bird](/pic/bird.png)
+![bird](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192417844-1001581944.png)
 
 
 
@@ -37,21 +37,21 @@ The solution design can be split into five steps, which are separated by the fiv
 
 **#1 the edge-layer** ( [CannyEdgeDetector by Müller, 2018](https://github.com/Milchreis/processing-imageprocessing))
 
-![layer01](./pic/layer01.jpg)
+![layer01](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192406668-1586679503.jpg)
 
 **#2 horizontal lines.** Lines in this layer must be parallel to each other, and only in one direction. Also, the lines should cover dark areas and avoid bright areas. And the density of lines depends on the brightness of the current area. 
 
-![layer02](/pic/layer02.png)
+![layer02](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192405391-827283098.png)
 
 **#3 vertical lines.** Lines in this layer are the same as horizontal lines, except the direction of this layer is perpendicular to the horizontal layer. 
 
-![layer03](/pic/layer03.png)
+![layer03](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192405095-1017041114.png)
 
 **#4 oblique lines.** bottom-left to top-right.
 
-![layer04](/pic/layer04.png)
+![layer04](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192404634-920060671.png)
 
 **#5 oblique lines.** top-left to bottom-right.
 
-![layer05](/pic/layer05.png)
+![layer05](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192403566-2029563505.png)
 
