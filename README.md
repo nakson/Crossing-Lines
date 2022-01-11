@@ -1,4 +1,4 @@
-﻿﻿# Crossing Lines
+﻿﻿﻿# Crossing Lines
 
 
 ## Intro
@@ -41,17 +41,17 @@ The solution design can be split into five steps, which are separated by the fiv
 
 **#2 horizontal lines.** Lines in this layer must be parallel to each other, and only in one direction. Also, the lines should cover dark areas and avoid bright areas. And the density of lines depends on the brightness of the current area. 
 
-![layer02](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192405391-827283098.png)
+![layer02](https://s2.loli.net/2022/01/11/ZjQWbgxUoSMPVh7.png)
 
 **#3 vertical lines.** Lines in this layer are the same as horizontal lines, except the direction of this layer is perpendicular to the horizontal layer. 
 
-![layer03](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192405095-1017041114.png)
+![layer03](https://s2.loli.net/2022/01/11/mzujdBC7Q6pIsif.png)
 
 **#4 oblique lines.** bottom-left to top-right.
 
-![layer04](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192404634-920060671.png)
+![layer04](https://s2.loli.net/2022/01/11/TmcxMUkY8BPngSA.png)
 
 **#5 oblique lines.** top-left to bottom-right.
 
-![layer05](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192403566-2029563505.png)
+![layer05](https://s2.loli.net/2022/01/11/hrz2Hc9vptPf673.png)
 
