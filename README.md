@@ -1,4 +1,4 @@
-﻿# Crossing Lines
+﻿﻿# Crossing Lines
 
 
 ## Intro
@@ -17,17 +17,17 @@ good start for future improvements.
 
 **Original image**                                                                 **Output image**
 
-![hall](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192445975-735800093.png)
+![hall](https://s2.loli.net/2022/01/11/ryIdM7gSOux6Xov.jpg)
 
-![peach](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192441798-1403833573.png)
+![peach](https://s2.loli.net/2022/01/11/e27bGEPmZhtwOQ4.png)
 
-![beach](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192438229-596549540.png)
+![beach](https://s2.loli.net/2022/01/11/b7Y2JFafPRTBeqp.png)
 
-![citybeach](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192428567-1213759285.png)
+![citybeach](https://s2.loli.net/2022/01/11/LG3XfZFyKkdrHJ5.png)
 
-![city](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192423029-1586098834.png)
+![city](https://s2.loli.net/2022/01/11/BabNHCZp2l89yX7.png)
 
-![bird](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192417844-1001581944.png)
+![bird](https://s2.loli.net/2022/01/11/QIVAJilgO59T37S.png)
 
 
 
@@ -37,7 +37,7 @@ The solution design can be split into five steps, which are separated by the fiv
 
 **#1 the edge-layer** ( [CannyEdgeDetector by Müller, 2018](https://github.com/Milchreis/processing-imageprocessing))
 
-![layer01](https://img2020.cnblogs.com/blog/2292583/202102/2292583-20210220192406668-1586679503.jpg)
+![layer01](https://s2.loli.net/2022/01/11/gImxlPpiu75ckCD.jpg)
 
 **#2 horizontal lines.** Lines in this layer must be parallel to each other, and only in one direction. Also, the lines should cover dark areas and avoid bright areas. And the density of lines depends on the brightness of the current area. 
 
