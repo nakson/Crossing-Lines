@@ -1,4 +1,4 @@
-﻿﻿﻿# Crossing Lines
+# Crossing Lines
 
 
 ## Intro
@@ -9,13 +9,7 @@ Crosshatching is a traditional drawing technique that had been used by artists f
 ### Prebuilt release  
 Go to [Release Page](https://github.com/nakson/Crossing-Lines/releases).  
 
-good start for future improvements.
-
-
-
-## Examples
-
-**Original image**                                                                 **Output image**
+## Examples of Input and Output
 
 ![hall](https://s2.loli.net/2022/01/11/ryIdM7gSOux6Xov.jpg)
 
